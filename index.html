@@ -21,6 +21,7 @@
           extend: {
             colors: {
               "home-primary": "#ABEF5F",
+              "home-secondary": "rgba(171, 239, 95, .5)",
               "home-primary-light": "rgba(171, 239, 95, .2)",
               "home-primary-black": "#1C1C1C",
               "home-secondary-black": "#494949"
@@ -41,9 +42,9 @@
       <nav class="px-5">
         <div class="navbar bg-base-100 flex justify-center items-center gap">
           <div class="navbar-start">
-            <div class="flex justify-center items-center">
+            <div class="flex justify-center items-center gap-2">
               <i class="fa-solid fa-arrow-right -rotate-45 bg-home-primary h-8 w-8 rounded-full flex justify-center items-center"></i>
-              <a class="btn btn-ghost text-xl lg:hidden">Rinterio</a>
+              <a class="text-xl lg:hidden font-extrabold">Rinterio</a>
             </div>
           </div>
           <div class="navbar-center hidden lg:flex">
@@ -85,6 +86,22 @@
           </div>
         </div>
       </nav>
+
+      <!-- Hero -->
+      <div class="hero pt-12 pb-24">
+        <div class="hero-content text-center flex flex-col">
+          <!-- Hero Images -->
+          <div>
+            <img class="" src="./assets/banner.png" alt="" />
+          </div>
+          <!-- Hero Text -->
+          <div class="">
+            <h1 class="md:text-5xl text-4xl font-extrabold">A barn house of this design has a striking appearance</h1>
+            <p class="py-6 text-home-secondary-black text-center md:text-sm text-xl">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <button class="btn bg-home-secondary hover:bg-home-secondary rounded-3xl max-sm:w-full max-sm:h-[52px]">View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-home-primary h-8 w-8 rounded-full flex justify-center items-center"></i></button>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Main Section -->

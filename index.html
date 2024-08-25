@@ -117,10 +117,7 @@
     <main>
       <!-- About us section -->
       <section class="bg-home-primary-gray-light text-gray-700 py-10 px-4 md:px-16">
-        <div class="hero container mx-auto relative">
-          <div>
-            <img class="absolute top-[-35px] left-20" src="./assets/Vector.png" alt="" />
-          </div>
+        <div class="hero container mx-auto">
           <div>
             <div class="hero-content flex-col-reverse lg:flex-row-reverse">
               <!-- Images -->
@@ -130,7 +127,10 @@
                 </figure>
               </div>
               <!-- Context -->
-              <div class="text-center flex-1 h-[560px]">
+              <div class="text-center flex-1 h-[560px] lg:relative">
+                <div class="hidden lg:block">
+                  <img class="lg:absolute lg:top-[-3rem] lg:left-[-5.75rem] mx-5" src="./assets/Vector.png" alt="" />
+                </div>
                 <!-- Button About us -->
                 <div class="pb-3 text-xl flex lg:justify-start justify-center mb-4">
                   <button class="btn rounded-3xl bg-white hover:bg-white font-bold"><i class="fa-solid fa-arrow-right text-xl"></i> About us</button>
@@ -266,11 +266,11 @@
           <div class="grid grid-cols-12 gap-4">
             <!-- Card-1 -->
             <div class="lg:col-span-9 col-span-full rounded-md">
-              <div class="card bg-base-100 shadow-xl lg:border lg:border-slate-200 flex md:flex-row flex-col rounded-xl bg-white">
-                <figure class="card-body w-full h-full object-cover object-center flex-1">
+              <div class="card bg-base-100 shadow-xl lg:border lg:border-slate-200 flex md:flex-row flex-col rounded-xl bg-white p-6">
+                <figure class="card-body p-4 lg:w-[260px] lg:h-[227px] object-cover object-center">
                   <img class="w-full h-full" src="./assets/img1.png" alt="Shoes" />
                 </figure>
-                <div class="flex flex-col items-start justify-center gap-6 max-sm:ml-8 flex-1">
+                <div class="flex flex-col items-start justify-center gap-6 max-sm:ml-8 lg:ml-4">
                   <h2 class="card-title md:text-xl font-extrabold">Commercial</h2>
                   <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
                   <h4 class="flex gap-1 items-center text-base md:text-xl font-extrabold">View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-home-primary h-8 w-8 rounded-full flex justify-center items-center"></i></h4>
